@@ -11,9 +11,11 @@ set noshowmode
 set cmdheight=2
 set scrolloff=3
 set laststatus=2
+" set colorcolumn=80
 
 set nobackup
 set nowritebackup
+set noswapfile
 
 set tabstop=2
 set softtabstop=2
@@ -28,8 +30,6 @@ set ignorecase
 set smartcase
 set showmatch
 
-set t_Co=256
-set background="dark"
 
 call plug#begin()
 
@@ -38,6 +38,10 @@ Plug 'tpope/vim-commentary'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdtree'
+Plug 'ap/vim-buftabline'
+
+Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
 
@@ -45,4 +49,23 @@ call plug#end()
 xmap ga <Plug>(EasyAlign)
 
 " fzf
-nnoremap <C-f> :Files<CR>
+nnoremap <C-p> :Rg<CR>
+
+" nerdtree
+let NERDTreeShowHidden=1
+nnoremap <C-n> :NERDTreeToggle<CR>
+
+" buftabline
+nnoremap <C-f> :bprev<CR>
+nnoremap <C-g> :bnext<CR>
+let g:buftabline_show=2
+let g:buftabline_separators=1
+hi BufTabLineFill ctermfg=8
+hi BufTabLineHidden ctermfg=8
+hi BufTabLineActive ctermfg=8
+
+" colorscheme
+set t_Co=256
+set background="dark"
+set termguicolors
+let ayucolor="dark"

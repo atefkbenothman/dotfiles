@@ -1,0 +1,5 @@
+[user]
+  name = atefkbenothman
+  email = atefkbenothman@gmail.com
+[alias]
+  lg = "log --all --decorate --color --graph --oneline --abbrev-commit --stat"
