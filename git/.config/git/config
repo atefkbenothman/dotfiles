@@ -1,5 +1,14 @@
 [user]
-  name = atefkbenothman
+  name  = atefkbenothman
   email = atefkbenothman@gmail.com
 [alias]
   lg = "log --all --decorate --color --graph --oneline --abbrev-commit --stat"
+  dft = difftool
+[diff]
+  tool = difftastic
+[difftool]
+  prompt = false
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
+[pager]
+  difftool = true

@@ -3,7 +3,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # start tmux on open
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux new -As0
+ exec tmux new -As0
 fi
 
 # aliases
@@ -22,3 +22,4 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden -g "!.git" '
 
 # set vi mode with <escape>
 set -o vi
+. "$HOME/.cargo/env"
