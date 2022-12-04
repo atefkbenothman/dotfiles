@@ -1,5 +1,6 @@
-local keymap = require("kai.keymap");
+local keymap = require("kai.keymap")
 
-local nnoremap = keymap.nnoremap;
+local nnoremap = keymap.nnoremap
 
-nnoremap("<C-n>", "<cmd>:NERDTreeToggle<CR>");
+vim.cmd("let NERDTreeShowHidden=1")
+nnoremap("<C-n>", "<cmd>:NERDTreeToggle<CR>")
