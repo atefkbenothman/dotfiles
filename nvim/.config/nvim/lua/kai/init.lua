@@ -1,3 +1,3 @@
-require("kai.set")
-require("kai.plugins")
-require("kai.remap")
+require("kai.remaps");
+require("kai.set");
+require("kai.packer");

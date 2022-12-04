@@ -1,1 +1,1 @@
-require("kai")
+require("kai");
