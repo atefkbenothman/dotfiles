@@ -7,7 +7,7 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
 fi
 
 # aliases
-alias ls="ls -alhG"
+alias ls="ls -alhG --color"
 alias grep="grep --color=always"
 alias vim="nvim"
 alias rm="rm -i"
@@ -25,4 +25,3 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden -g "!.git" '
 
 # set vi mode with <escape>
 set -o vi
-. "$HOME/.cargo/env"

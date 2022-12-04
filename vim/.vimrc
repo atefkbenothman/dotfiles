@@ -41,8 +41,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'ap/vim-buftabline'
 
-Plug 'ayu-theme/ayu-vim'
-
 call plug#end()
 
 " vim-easy-align
@@ -65,7 +63,5 @@ hi BufTabLineHidden ctermfg=8
 hi BufTabLineActive ctermfg=8
 
 " colorscheme
-set t_Co=256
 set background="dark"
 set termguicolors
-let ayucolor="dark"
