@@ -10,6 +10,8 @@ fi
 alias ls="ls -alhG"
 alias grep="grep --color=always"
 alias vim="nvim"
+alias rm="rm -i"
+alias tree="tree -a"
 
 # prompt
 parse_git_branch() {
