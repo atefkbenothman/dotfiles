@@ -20,6 +20,10 @@ local on_attach = function(client, bufnr)
   vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
   vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, bufopts)
 
+  vim.diagnostic.config({
+    update_in_insert = true,
+  })
+
 end
 
 lsp.pyright.setup{
