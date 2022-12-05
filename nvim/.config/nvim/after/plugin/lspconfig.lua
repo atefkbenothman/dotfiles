@@ -17,10 +17,14 @@ local on_attach = function(client, bufnr)
   vim.keymap.set("n", "gi", vim.lsp.buf.implementation, bufopts)
   vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, bufopts)
   vim.keymap.set("n", "gf", vim.diagnostic.goto_next, bufopts)
+  vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, bufopts)
   vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
   vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, bufopts)
 
   vim.diagnostic.config({
+    underline = true,
+    signs = true,
+    virtual_text = false,
     update_in_insert = true,
   })
 
