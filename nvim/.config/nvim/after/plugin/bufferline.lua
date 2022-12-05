@@ -10,11 +10,15 @@ local nnoremap = keymap.nnoremap;
 
 bufferline.setup({
   options = {
+    indicator = {
+      style = "none"
+    },
     color_icons = false,
     show_close_icon = false,
     show_buffer_icons = false,
     show_buffer_close_icons = false,
     show_buffer_default_icon = false,
+    show_tab_indicators = false,
     separator_style = "thin",
   }
 })
