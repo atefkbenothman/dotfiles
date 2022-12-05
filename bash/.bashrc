@@ -10,7 +10,7 @@ fi
 alias ls="ls -alhG --color"
 alias grep="grep --color=always"
 alias vim="nvim"
-alias rm="rm -i"
+alias rm="rm -rf -i"
 alias tree="tree -a"
 
 # prompt
