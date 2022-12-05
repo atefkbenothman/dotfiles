@@ -4,7 +4,11 @@ if not ok then
   return
 end
 
+ -- Set up lspconfig.
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 local on_attach = function(client, bufnr)
+  capabilities = capabilities
   -- Enable completion triggered by <c-x><c-o>
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
